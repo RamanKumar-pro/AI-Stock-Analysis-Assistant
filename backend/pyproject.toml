@@ -1,14 +1,20 @@
 [project]
-name = "advanced-ai-stock-analysis-assistant"
+name = "advanced-ai-stock-analysis-assistant-backend"
 version = "0.1.0"
-description = "Add your description here"
+description = "FastAPI + LangChain stock analysis assistant backend"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "fastapi>=0.135.1",
-    "langchain[openai]>=1.2.13",
-    "pydantic>=2.12.5",
-    "python-dotenv>=1.2.2",
-    "uvicorn>=0.42.0",
-    "yfinance>=1.2.0",
+  "fastapi>=0.116",
+  "uvicorn>=0.23",
+  "langchain>=0.1.0",
+  "langgraph>=0.1.0",
+  "langchain-openai>=0.1.0",
+  "python-dotenv>=1.0",
+  "pydantic>=1.10",
+  "yfinance>=0.2",
+  "anyio>=3.7"
 ]
+
+[tool.uv.run]
+python = "main.py"
